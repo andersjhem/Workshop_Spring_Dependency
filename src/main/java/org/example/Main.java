@@ -1,7 +1,16 @@
 package org.example;
 
+
+import org.example.data_access.Student_Dao;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.io.ObjectInputFilter;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World! :D :D ");
+    public static <StudentDao> void main(String[] args) {
+        AnnotationConfigApplicationContext context =
+                new AnnotationConfigApplicationContext(ObjectInputFilter.Config.class);
+        //StudentDao studentDao = context.getBean(Student_Dao.class);
     }
 }

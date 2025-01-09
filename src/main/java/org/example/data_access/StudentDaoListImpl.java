@@ -2,9 +2,11 @@ package org.example.data_access;
 
 
 import org.example.models.Student;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 
 public class StudentDaoListImpl implements Student_Dao {
     @Override

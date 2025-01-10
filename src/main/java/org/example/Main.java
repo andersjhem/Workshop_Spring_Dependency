@@ -11,6 +11,6 @@ public class Main {
     public static <StudentDao> void main(String[] args) {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(ObjectInputFilter.Config.class);
-        //StudentDao studentDao = context.getBean(Student_Dao.class);
+        StudentDao studentDao = (StudentDao) context.getBean(Student_Dao.class);
     }
 }

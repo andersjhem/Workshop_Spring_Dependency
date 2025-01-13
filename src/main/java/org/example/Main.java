@@ -23,8 +23,3 @@ public class Main {
     }
 }
 
-//<dependency>
-//            <groupId>org.springframework</groupId>
-//            <artifactId>spring-context-support</artifactId>
-//            <version>6.1.10</version>
-//        </dependency>
